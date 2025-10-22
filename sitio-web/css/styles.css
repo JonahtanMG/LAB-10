@@ -39,6 +39,9 @@ footer {
     background: #333;
 }
 
+a:hover {
+    font-weight: bold;
+}
 
 /*CSS DE INDEX*/
 .bienvenida {
@@ -54,30 +57,30 @@ footer {
     padding: 15px;
 }
 
-.incio-grid{
+.inicio{
     padding: 25px;
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
+    gap: 10px;
 }
 
-.incio-grid p {
+.inicio p {
     margin: 15px 20px;
     padding: 10px 10px;
     background: gainsboro;
-    gap: 10px;
 }
 
 /*CSS DE SERVICIOS*/
 
-main .servicios-grid {
+.servicios {
     display: grid;
     padding: 15px;
     grid-template-columns: auto auto auto auto;
     text-align: center;
 }
 
-.servicios-grid p {
+.servicios p {
     margin: 15px 20px;
     padding: 10px 10px;
     background: gainsboro;
@@ -86,13 +89,47 @@ main .servicios-grid {
 
 /*CSS DE PORTAFOLIO*/
 .portafolio {
-    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
     justify-items: center;
+    padding: 10px 15px;
 }
 
 .portafolio p{
+    text-align: center;
     margin: 10px;
     background: gainsboro;
     padding: 20px;
     width: 200px;
 }
+
+/*CSS DE NOSOTROS*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.nosotros p {
+    background: gainsboro;
+    text-align: center;
+    margin: 15px 20px;
+    padding: 10px 10px;
+}
+
+/*CSS DE CONTACTO*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+form input, textarea, button{
+    padding: 10px;
+    width: 400px;
+}
+
